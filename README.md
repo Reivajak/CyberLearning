@@ -1,30 +1,37 @@
 # Port Scanner en Python
 
-Este proyecto escanea los puertos de un host (IP o dominio) usando Python puro. Permite identificar qué puertos están abiertos en un rango determinado (20-1024).
+Este proyecto es un escáner de puertos sencillo hecho con Python. Su objetivo es detectar qué puertos están abiertos en una IP o dominio dentro de un rango (del 20 al 1024). Está pensado como una práctica básica para entender cómo funcionan los puertos y los servicios que corren en ellos.
+
+---
 
 ## ¿Para qué sirve?
 
-Los escáneres de puertos son herramientas comunes en ciberseguridad ofensiva y defensiva para:
+Los escáneres de puertos se usan mucho en ciberseguridad, tanto para defender como para encontrar vulnerabilidades. Este tipo de herramienta ayuda a:
 
-- Detectar servicios inseguros o abiertos por error
-- Evaluar la exposición de un sistema en red
+- Detectar servicios que están abiertos sin necesidad o por error.
+- Saber qué tan expuesto está un sistema en red.
+- Prepararse para análisis más avanzados en entornos reales.
+
+---
 
 ## Cómo usarlo
 
-1. Ejecuta el script: port_scanner.py
-2. Ingresa una IP o dominio cuando lo pida (por ejemplo: `google.com` o `scanme.nmap.org`).
+1. Ejecuta el script `port_scanner.py`.
+2. Ingresa una IP o dominio cuando se te pida (por ejemplo: `google.com` o `scanme.nmap.org`).
+3. El programa te mostrará qué puertos están abiertos en ese host.
 
-## Qué aprendí
+---
 
-- Cómo funcionan los puertos y los sockets
-- Cómo detectar servicios abiertos en red
-- Principios básicos de un escaneo de red seguro
+## ¿Qué aprendí?
 
-Con este proyecto entendí conceptos clave de redes y ciberseguridad relacionados con los puertos, los protocolos de comunicación, y el uso de sockets en Python. Aprendí que cada servicio (como un servidor web, SSH o FTP) se comunica a través de un puerto específico, y que escanear estos puertos permite identificar qué servicios están activos en una máquina.
+Con este proyecto aprendí varias cosas importantes sobre redes y ciberseguridad:
 
-También aprendí a utilizar la biblioteca estándar de Python socket para abrir conexiones TCP y detectar si un puerto está abierto o cerrado, lo que es esencial en tareas de análisis de vulnerabilidades.
+- Entendí mejor qué son los puertos y cómo los servicios como SSH, HTTP o FTP se comunican a través de ellos.
+- Aprendí a usar la librería `socket` de Python para abrir conexiones TCP y saber si un puerto está abierto o cerrado.
+- Me di cuenta de lo importante que es usar un tiempo de espera (`timeout`) para que el programa no se quede congelado.
+- También vi cómo automatizar este tipo de tareas sin necesidad de usar herramientas externas como Nmap.
 
-Además, comprendí la importancia de limitar el tiempo de espera (timeout) para evitar que el script se quede congelado y cómo automatizar un escaneo de puertos sin depender de herramientas externas como Nmap.
+Además, me ayudó a mejorar la forma en que escribo y documento mis scripts, y me dejó una buena base para seguir aprendiendo cosas más avanzadas como detección de servicios o pruebas de fuerza bruta en un entorno controlado.
 
-Este ejercicio me enseñó a estructurar un script limpio, documentado y funcional, y me dio una base para futuros proyectos más avanzados como escaneos con detección de servicios o ataques de fuerza bruta controlados.
+---
 
