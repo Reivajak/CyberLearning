@@ -17,13 +17,13 @@ from datetime import datetime  # Para medir el tiempo total del escaneo
 # Solicita al usuario el objetivo del escaneo
 target = input("Ingresa la IP o dominio a escanear: ")
 
-# Define el rango de puertos a escanear 
+# Rango de puertos a escanear 
 start_port = 20
 end_port = 1024
 
 print(f"\nEscaneando {target} del puerto {start_port} al {end_port} con hilos...\n")
 
-# Marca el inicio del escaneo
+# Inicio del escaneo
 start_time = datetime.now()
 
 # Función que escanea un solo puerto
@@ -37,7 +37,7 @@ def scan_port(port):
 
         if result == 0:
             try:
-                # Intenta identificar el servicio que usa ese puerto
+                # Identifica el servicio que usa ese puerto
                 service = socket.getservbyport(port)
             except:
                 service = "Servicio desconocido"
@@ -46,7 +46,6 @@ def scan_port(port):
         sock.close()
 
     except:
-        # Si ocurre cualquier error se ignora
         pass
 
 # Lista para guardar todos los hilos que se van a crear
@@ -62,7 +61,7 @@ for port in range(start_port, end_port + 1):
 for thread in threads:
     thread.join()
 
-# Marca el final del escaneo
+# Final del escaneo
 end_time = datetime.now()
 duration = end_time - start_time
 
