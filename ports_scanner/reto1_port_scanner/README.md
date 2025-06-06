@@ -33,6 +33,11 @@ Con este proyecto aprendí varias cosas importantes sobre redes y ciberseguridad
 
 Además, me ayudó a mejorar la forma en que escribo y documento mis scripts, y me dejó una buena base para seguir aprendiendo cosas más avanzadas como detección de servicios o pruebas de fuerza bruta en un entorno controlado.
 
+## 👨‍💻 Autor
+
+Javier Ávila  
+Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN  
+Especializándome en ciberseguridad y redes
 ---
 
 
