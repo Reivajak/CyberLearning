@@ -33,7 +33,7 @@ En esta versión, optimicé el rendimiento usando **hilos (multithreading)** par
 
 ## 👨‍💻 Autor
 
-Javier Ávila
+Javier Ávila Andrade
 
 Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN
 
