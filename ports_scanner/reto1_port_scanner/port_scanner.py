@@ -8,7 +8,7 @@ Port Scanner en Python
 Este script realiza un escaneo de puertos TCP en un host determinado,
 en un rango de puertos definido, e informa cuáles están abiertos.
 
-Autor: Javier Ávila
+Autor: Javier Ávila Andrade
 Fecha: Junio 2025
 """
 
