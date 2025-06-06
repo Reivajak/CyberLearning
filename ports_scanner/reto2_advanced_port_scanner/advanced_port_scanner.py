@@ -36,7 +36,7 @@ for port in range(start_port, end_port + 1):
         # Si la conexión fue exitosa (0), el puerto está abierto
         if result == 0:
             try:
-                # Intentar obtener el nombre del servicio (como HTTP, SSH, etc.)
+                # Obtener el nombre del servicio (como HTTP, SSH, etc.)
                 service = socket.getservbyport(port)
             except:
                 service = "Servicio desconocido"
