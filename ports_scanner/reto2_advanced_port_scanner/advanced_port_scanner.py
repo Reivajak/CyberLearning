@@ -3,7 +3,7 @@
 
 """
 Escáner de puertos con identificación de servicios
-Autor: Javier Ávila
+Autor: Javier Ávila Andrade
 Fecha: Junio 2025
 
 Este script escanea los puertos del 20 al 1024 en un host (IP o dominio)
