@@ -1,10 +1,10 @@
-# Escáner de Puertos con Servicios en Python 🔐
+# Escáner de Puertos con Servicios en Python
 
 Este es un escáner de puertos que desarrollé como parte de mi formación en ciberseguridad. A diferencia del escáner básico, este no solo detecta qué puertos están abiertos en un host, también identifica qué servicio suele trabajar en ese puerto (como HTTP, SSH, FTP, etc.).
 
 ---
 
-## 🧠 ¿Para qué sirve?
+## ¿Para qué sirve?
 
 Conocer qué puertos están abiertos en un servidor o dispositivo es clave en ciberseguridad. Permite detectar posibles puntos débiles y servicios que podrían representar un riesgo si están mal configurados o innecesariamente expuestos.
 
@@ -15,15 +15,15 @@ Este script ayuda a:
 
 ---
 
-## ⚙️ Cómo funciona
+## ¿Cómo funciona?
 
-1. Ejecuta el script: python3 advanced_port_scanner.py
+1. Ejecuta el script: advanced_port_scanner.py
 2. Ingresa una IP o dominio (como `scanme.nmap.org` o una IP local)
-3. El programa escaneará los puertos del 20 al 1024 e imprimirá los que están abiertos, junto con su nombre de servicio (si se puede identificar)
+3. El programa escaneará los puertos del 20 al 1024 e imprimirá los que están abiertos, junto con su nombre de servicio
 
 ---
 
-## 📚 ¿Qué aprendí con este proyecto?
+## ¿Qué aprendí con este proyecto?
 
 - Cómo detectar puertos abiertos usando sockets en Python
 - Cómo identificar el servicio asociado a un puerto usando `getservbyport`
