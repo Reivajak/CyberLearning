@@ -31,8 +31,10 @@ En esta versión, optimicé el rendimiento usando **hilos (multithreading)** par
 3. Escribe la IP o dominio cuando lo pida (por ejemplo: scanme.nmap.org)
 4. Verás en tiempo real qué puertos están abiertos y qué servicio hay detrás
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
 Javier Ávila
+
 Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN
+
 Apasionado por la ciberseguridad y la automatización
