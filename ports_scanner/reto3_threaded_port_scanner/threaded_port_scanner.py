@@ -3,7 +3,7 @@
 
 """
 Escáner de puertos con multithreading
-Autor: Javier Ávila 
+Autor: Javier Ávila Andrade
 Fecha: Junio 2025
 
 Este script realiza un escaneo rápido de puertos en un host utilizando hilos (threads),
