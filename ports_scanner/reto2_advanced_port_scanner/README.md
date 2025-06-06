@@ -37,5 +37,7 @@ Este ejercicio me ayudó a seguir desarrollando mis habilidades en redes, escane
 ## 👨‍💻 Autor
 
 Javier Ávila Andrade
+
 Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN  
+
 Especializándome en ciberseguridad y redes
