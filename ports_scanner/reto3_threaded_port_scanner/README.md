@@ -19,7 +19,7 @@ En esta versión, optimicé el rendimiento usando **hilos (multithreading)** par
 - Cómo funciona el uso de hilos en Python con `threading`
 - Cómo hacer que el escaneo de puertos sea mucho más eficiente
 - Cómo capturar e identificar servicios comunes en los puertos detectados
-- Lo importante que es manejar bien los tiempos de espera (`timeout`) para evitar cuelgues
+- Lo importante que es manejar bien los tiempos de espera (`timeout`) para evitar que se queden pasmados
 - Y cómo documentar un script para que sea entendible y reutilizable
 
 ---
@@ -31,8 +31,10 @@ En esta versión, optimicé el rendimiento usando **hilos (multithreading)** par
 3. Escribe la IP o dominio cuando lo pida (por ejemplo: scanme.nmap.org)
 4. Verás en tiempo real qué puertos están abiertos y qué servicio hay detrás
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
-Javier Ávila
+Javier Ávila Andrade
+
 Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN
+
 Apasionado por la ciberseguridad y la automatización

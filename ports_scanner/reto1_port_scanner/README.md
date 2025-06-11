@@ -35,7 +35,7 @@ Además, me ayudó a mejorar la forma en que escribo y documento mis scripts, y 
 
 ## 👨‍💻 Autor
 
-Javier Ávila  
+Javier Ávila Andrade  
 Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN  
 Especializándome en ciberseguridad y redes
 ---
