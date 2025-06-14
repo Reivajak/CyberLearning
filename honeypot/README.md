@@ -1,57 +1,60 @@
-# 🛡️ Honeypot Simple en Python
 
-Este proyecto lo desarrollé como parte de mi formación en ciberseguridad. Es un honeypot simple: un servidor falso que simula ofrecer un servicio "atractivo" y registra cualquier intento de conexión. Me ayudó a entender mejor cómo funcionan los sockets, la comunicación en red, y la importancia del registro de actividad.
+#  Honeypot Simple en Python + Analizador de Conexiones
+
+Este proyecto fue desarrollado como parte de mi formación en ciberseguridad. Consiste en un **honeypot simple** que simula un servidor falso y registra intentos de conexión, y un **script de análisis en Python** que procesa esos registros para extraer información útil.
 
 ---
 
-## 1️⃣ ¿Qué hace este honeypot?
+##  ¿Qué hace este proyecto?
 
-- Escucha conexiones entrantes en el puerto **2222**.
-- Simula un servidor con un nombre llamativo: `Servidor tarjetas_clientes_2025`.
-- Registra cada intento de conexión, incluyendo:
-  - Dirección IP del visitante
+### 🔸 `honeypot_simple.py`
+- Escucha conexiones en el puerto **2222**.
+- Simula un servidor con el nombre `tarjetas_clientes_2025`.
+- Registra:
+  - IP del visitante
   - Puerto remoto
   - Fecha y hora
-  - Datos enviados (si los hay)
-- Guarda toda la información en un archivo `.csv` llamado `registros_honeypot.csv`.
+  - Datos enviados
+- Guarda los datos en `registros_honeypot.csv`.
+
+### 🔸 `analizador_registros.py`
+- Lee los registros del archivo `.csv`.
+- Muestra:
+  - Número total de conexiones registradas
+  - Conexiones que enviaron datos
+  - Cantidad de intentos por IP
+  - Puertos remotos usados por los clientes
 
 ---
 
-## 2️⃣ ¿Cómo lo probé?
+##  Cómo ejecutarlo
 
-- Ejecuté el honeypot en una máquina virtual con Linux.
-- Me conecté desde:
-  - La **misma máquina** usando `netcat`.
-  - Una **MacBook conectada a la misma red local**.
-- Las conexiones fueron detectadas correctamente y registradas tanto en consola como en el archivo `.csv`.
+### 1. Ejecutar el honeypot:  python3 honeypot_simple.py
 
----
+- Desde otra terminal o equipo en la red local, conéctate con:
 
-## 3️⃣ ¿Cómo se ejecuta?
+    nc <IP-del-servidor> 2222
 
-1. Asegúrate de tener Python 3 instalado.
-2. Descarga el archivo `honeypot_simple.py`.
-3. Abre una terminal y ejecuta:     python3 honeypot_simple.py
-4. Desde otra terminal o computadora en la misma red, conéctate con:    nc <IP-del-servidor> 2222
-   Ejemplo: nc 192.168.1.93 2222
-5. Escribe algo como `Hola` y presiona Enter.
-6. Verás la conexión reflejada en la consola y guardada en el archivo `.csv`.
+    Ejemplo:  nc 192.168.1.93 2222
+
+
+### 2. Ejecutar el analizador:  python3 analizador_registros.py
+
 
 ---
 
-## 4️⃣ Ejemplo de salida en consola
+##  Ejemplo de salida (honeypot)
 
 ```
 [+] Servidor tarjetas_clientes_2025 activo en el puerto 2222
 [*] Esperando conexiones...
-
 [!] Conexión detectada de 192.168.1.75:54089 a las 2025-06-10 18:22:37
     ↳ Datos recibidos: Hola
 ```
 
 ---
 
-## 5️⃣ Ejemplo de contenido del archivo `registros_honeypot.csv`
+##  Ejemplo de contenido del archivo `registros_honeypot.csv`
 
 ```
 fecha_hora,ip,puerto,dato_recibido
@@ -61,28 +64,46 @@ fecha_hora,ip,puerto,dato_recibido
 
 ---
 
-## 6️⃣ ¿Qué aprendí?
 
-- Crear un servidor TCP en Python usando sockets.
-- Detectar y registrar conexiones en red.
-- Guardar registros en formato `.csv` de forma estructurada.
-- Simular un entorno de monitoreo básico, similar al de un analista SOC.
+##  Ejemplo de salida (analizador)
+
+```
+ Registros cargados: 15 filas
+
+ Conexiones con datos enviados: 5
+
+ Conexiones por dirección IP:
+192.168.1.75    12
+192.168.1.88     3
+
+ Puertos remotos usados:
+54089    4
+54090    3
+...
+```
 
 ---
 
-## 7️⃣ Posibles mejoras futuras
+##  Lo que aprendí
 
-- Mostrar estadísticas por IP (reintentos, volumen).
-- Visualizar conexiones en gráficos (con matplotlib).
-- Simular múltiples servicios falsos en distintos puertos.
-- Alertas en tiempo real por terminal o notificaciones.
+- Uso de `sockets` para crear servidores TCP.
+- Registro estructurado de conexiones en `.csv`.
+- Análisis de eventos con `pandas`.
+- Primer acercamiento al monitoreo de actividad en red.
 
 ---
 
-## 🧑‍💻 Autor
+##  Posibles mejoras
 
-Javier Ávila Andrade
+- Visualizaciones con `matplotlib` o `seaborn`.
+- Exportar resultados como PDF o gráficos.
+- Automatizar alertas por múltiples intentos sospechosos.
+- Implementar múltiples honeypots con diferentes puertos y respuestas.
 
-Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN
+---
 
-Apasionado por la ciberseguridad y la automatización
+## 👨‍💻 Autor
+
+**Javier Ávila Andrade**  
+Estudiante de Ingeniería en Comunicaciones y Electrónica – IPN  
+Enfocado en ciberseguridad, automatización y análisis de datos.
