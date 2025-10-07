@@ -18,7 +18,7 @@ archivo = "registros_honeypot.csv"
 # Cargamos el archivo CSV y lo guardamos como un "DataFrame"
 df = pd.read_csv(archivo)
 
-# Mostramos las primeras filas del archivo para confirmar que se leyó correctamente
+# Mostramos filas del archivo para confirmar que se leyó correctamente
 print(" Primeros registros encontrados en el archivo:")
 print(df, "\n")
 
