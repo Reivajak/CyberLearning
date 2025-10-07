@@ -1,6 +1,6 @@
 # Escáner de Puertos con Servicios en Python
 
-Este es un escáner de puertos que desarrollé como parte de mi formación en ciberseguridad. A diferencia del escáner básico, este no solo detecta qué puertos están abiertos en un host, también identifica qué servicio suele trabajar en ese puerto (como HTTP, SSH, FTP, etc.).
+A diferencia del escáner básico, este no solo detecta qué puertos están abiertos en un host, también identifica qué servicio suele trabajar en ese puerto (como HTTP, SSH, FTP, etc.).
 
 ---
 
