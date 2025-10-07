@@ -1,6 +1,6 @@
 # nmap_auto_scan.py – Escaneo automatizado de red con Nmap
 
-Este script en Python realiza un escaneo automático de red usando Nmap y genera estadísticas útiles de los dispositivos conectados. Desarrollé este proyecto como parte de mi aprendizaje práctico en ciberseguridad, combinando escaneo activo, registro en CSV y visualización de datos.
+Este script en Python realiza un escaneo automático de red usando Nmap y genera estadísticas útiles de los dispositivos conectados. Desarrollé este proyecto combinando escaneo activo, registro en CSV y visualización de datos.
 
 ## ¿Qué hace?
 
