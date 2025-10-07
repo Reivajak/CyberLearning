@@ -1,13 +1,13 @@
 
 #  Honeypot Simple en Python + Analizador de Conexiones
 
-Este proyecto fue desarrollado como parte de mi formación en ciberseguridad. Consiste en un **honeypot simple** que simula un servidor falso y registra intentos de conexión, y un **script de análisis en Python** que procesa esos registros para extraer información útil.
+Este proyecto consiste en un *honeypot simple* que simula un servidor falso y registra intentos de conexión, y un *script de análisis en Python* que procesa esos registros para extraer información útil.
 
 ---
 
 ##  ¿Qué hace este proyecto?
 
-### 🔸 `honeypot_simple.py`
+###  `honeypot_simple.py`
 - Escucha conexiones en el puerto **2222**.
 - Simula un servidor con el nombre `tarjetas_clientes_2025`.
 - Registra:
@@ -17,7 +17,7 @@ Este proyecto fue desarrollado como parte de mi formación en ciberseguridad. Co
   - Datos enviados
 - Guarda los datos en `registros_honeypot.csv`.
 
-### 🔸 `analizador_registros.py`
+###  `analizador_registros.py`
 - Lee los registros del archivo `.csv`.
 - Muestra:
   - Número total de conexiones registradas
@@ -90,15 +90,6 @@ fecha_hora,ip,puerto,dato_recibido
 - Registro estructurado de conexiones en `.csv`.
 - Análisis de eventos con `pandas`.
 - Primer acercamiento al monitoreo de actividad en red.
-
----
-
-##  Posibles mejoras
-
-- Visualizaciones con `matplotlib` o `seaborn`.
-- Exportar resultados como PDF o gráficos.
-- Automatizar alertas por múltiples intentos sospechosos.
-- Implementar múltiples honeypots con diferentes puertos y respuestas.
 
 ---
 
