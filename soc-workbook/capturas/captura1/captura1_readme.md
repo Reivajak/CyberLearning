@@ -108,3 +108,8 @@ Ahora me siento mucho más seguro. Ya me muevo con más confianza tanto en la te
 Lo que más me gustó es que empiezo a ver cómo todo se conecta: redes, protocolos y ciberseguridad ya no son cosas separadas, sino partes de lo mismo.  
 Siento que este aprendizaje ya forma parte de mí, y eso me motiva a seguir aprendiendo hasta que todo esto me resulte algo natural.
 
+---
+
+Puedes consultar la práctica completa en mi repositorio de GitHub:  
+👉 [Análisis de tráfico con tcpdump y Wireshark](https://github.com/Reivajak/CyberLearning/blob/main/soc-workbook/capturas/captura1/captura1_readme.md)
+
