@@ -49,7 +49,7 @@ Entre los dominios consultados estaban:
 - collector-pxdojv695v.protechts.net (servicio automático usado por navegadores o antivirus)
 
 Cada consulta fue respondida correctamente con direcciones IP válidas, lo que indica que el sistema resolvió nombres sin errores.
-![DNS Analysis](./captura1/dns.png)
+![DNS Analysis](./dns.png)
 
 ---
 
