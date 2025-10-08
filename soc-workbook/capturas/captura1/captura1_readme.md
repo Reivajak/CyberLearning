@@ -29,7 +29,7 @@ El propósito es entender cómo fluye la comunicación en la red y qué papel ti
 3. Abrí el archivo en Wireshark con:
 
     wireshark ~/CyberLearning/soc-workbook/capturas/"$CAP"
-   WIRESHARK Analysis](./wireshark.png)
+   ![WIRESHARK Analysis](./wireshark.png)
    
 
 5. En Wireshark, utilicé filtros para observar diferentes tipos de tráfico:
