@@ -21,6 +21,7 @@ El propósito es entender cómo fluye la comunicación en la red y qué papel ti
 
    Esto comenzó la captura de todo el tráfico desde cualquier interfaz.  
    Navegué por sitios como **LinkedIn**, **Amazon** y **YouTube** durante aproximadamente un minuto.
+![CAPTURA Analysis](./captura.png)
 
 2. Cuando terminé, presioné `Ctrl + C` para detener la captura.  
    El sistema mostró que se habían capturado más de **61,000 paquetes** sin pérdida de datos.
@@ -28,8 +29,10 @@ El propósito es entender cómo fluye la comunicación en la red y qué papel ti
 3. Abrí el archivo en Wireshark con:
 
     wireshark ~/CyberLearning/soc-workbook/capturas/"$CAP"
+   WIRESHARK Analysis](./wireshark.png)
+   
 
-4. En Wireshark, utilicé filtros para observar diferentes tipos de tráfico:
+5. En Wireshark, utilicé filtros para observar diferentes tipos de tráfico:
    - dns
    - tcp
    - tls
@@ -58,6 +61,7 @@ El análisis mostró el establecimiento de conexiones entre mi equipo y servidor
 Pude identificar el **proceso de tres pasos (SYN, SYN-ACK, ACK)** típico del handshake TCP.
 
 Esto confirma que las conexiones se establecieron correctamente y que no hubo retransmisiones ni fallos.
+![TCP Analysis](./tcp.png)
 
 ---
 
@@ -69,6 +73,7 @@ Luego del handshake TCP, se observaron varios paquetes con el protocolo **TLSv1.
 
 En uno de los paquetes aparecía un **Client Hello**, que inicia el proceso de cifrado.  
 Esto indica que la comunicación se estableció de forma segura usando HTTPS.
+![TLS Analysis](./tls.png)
 
 ---
 
@@ -81,6 +86,7 @@ Finalmente, filtrando por http, encontré peticiones sin cifrar (puerto 80) haci
   Esta petición es legítima: Firefox la usa para verificar si hay conexión a Internet.
 
 El tráfico HTTP se mostraba completamente visible, confirmando que el contenido viaja en texto claro cuando no hay cifrado.
+![HTTP Analysis](./http.png)
 
 ---
 
