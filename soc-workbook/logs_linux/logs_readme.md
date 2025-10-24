@@ -42,7 +42,7 @@ Critical kernel errors are identified, generally associated with the virtualizat
 Shows the connection process managed by `NetworkManager`, including IP assignment and network interface activation.
 
 ### 5️⃣ Evidence file
-![Evidence file](./evidence/txt.png)  
+![Evidence file](./evidence/logs_txt.png)  
 Exported log file containing the most recent warning events for later analysis.
 
 ---
