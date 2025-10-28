@@ -11,8 +11,6 @@ nmap -sn 192.168.1.0/24               # Ping sweep: discover active hosts
 nmap -sS -p 1-1024 192.168.1.10       # SYN scan for a specific host
 nmap -sV -p 22,80,443 192.168.1.10    # Service version detection
 nmap --script=vuln 192.168.1.10       # Run basic vulnerability scripts
-nmap -sV 192.168.1.10 -oX nmap_report.xml
-nmap -sV 192.168.1.10 -oN nmap_report.txt
 ```
 
 ---
