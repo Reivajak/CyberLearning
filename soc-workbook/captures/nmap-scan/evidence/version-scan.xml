@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Tue Oct 28 15:42:08 2025 as: /usr/lib/nmap/nmap -&#45;privileged -sV -p 22,80,443 -oN version-scan.txt -oX version-scan.xml scanme.nmap.org -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sV -p 22,80,443 -oN version-scan.txt -oX version-scan.xml scanme.nmap.org" start="1761687728" startstr="Tue Oct 28 15:42:08 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="scanme.nmap.org" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1761687739" endtime="1761687747"><status state="up" reason="echo-reply" reason_ttl="50"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="scanme.nmap.org" type="user"/>
+<hostname name="scanme.nmap.org" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="50"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="82885" rttvar="35676" to="225589"/>
+</host>
+<runstats><finished time="1761687747" timestr="Tue Oct 28 15:42:27 2025" summary="Nmap done at Tue Oct 28 15:42:27 2025; 1 IP address (1 host up) scanned in 19.07 seconds" elapsed="19.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
